@@ -1,110 +1,212 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>YAMACAFE ヤマカフェ</title>
-
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-
-	<link rel="icon" href="img/favicon.png" type="image/png">
-	<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-
+  <meta charset="utf-8">
+  <title>Nechan | Portfolio</title>
+  <meta name="description" content="ポートフォリオサイトです。" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/guid.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;900&display=swap" rel="stylesheet">
+  <script>
+    (function (d) {
+      var config = {
+        kitId: 'tfd3hnl',
+        scriptTimeout: 3000,
+        async: true
+      },
+        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
 </head>
-<body>
 
-    <header class="header">
-        <div class="site">
-            <img src="img/yamacafe-w.svg" alt="YAMACAFE ヤマカフェ">
+<body>
+  <div class="container guid">
+
+    <!-- ↓ content ↓ -->
+
+    <section class="mainVisual">
+      <div class="mainVisual__wrapper">
+        <img class="mainVisual__img" src="img/sample.jpg">
+        <h1 class="mainVisual__copy fontsize--XO">SETO<br>AYANE</h1>
+        <h2 class="mainVisual__copy2 fontsize--S">Designer<br>Photographer<br>Web Developper<br>Illustrator</h2>
+        <p class="mainVisual__description fontsize--S">東京都内在住のクリエイターです。<br>
+          Webデザイン/Web制作/写真撮影/<br>イラスト制作/動画制作請負います。</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__wrapper">
+        <!-- ↓この中にコンテンツを入れる↓ -->
+
+        <h2 class="section__title">Section Title</h2>
+
+        <div class="layout--4">
+
+          <a class="card" href="#">
+            <div class="card__wrapper">
+              <img class="card__image" src="img/sample.jpg" alt="">
+              <div class="card__box">
+                <h3 class="card__title fontsize--L">Card Title</h3>
+                <p class="card__desc fontsize--S">Card Description Card Description Card Description Card Description
+                  Card Description Card Description</p>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="#">
+            <div class="card__wrapper">
+              <img class="card__image" src="img/sample.jpg" alt="">
+              <div class="card__box">
+                <h3 class="card__title fontsize--L">Card Title</h3>
+                <p class="card__desc fontsize--S">Card Description Card Description Card Description Card Description
+                  Card Description Card Description</p>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="#">
+            <div class="card__wrapper">
+              <img class="card__image" src="img/sample.jpg" alt="">
+              <div class="card__box">
+                <h3 class="card__title fontsize--L">Card Title</h3>
+                <p class="card__desc fontsize--S">Card Description Card Description Card Description Card Description
+                  Card Description Card Description</p>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="#">
+            <div class="card__wrapper">
+              <img class="card__image" src="img/sample.jpg" alt="">
+              <div class="card__box">
+                <h3 class="card__title fontsize--L">Card Title</h3>
+                <p class="card__desc fontsize--S">Card Description Card Description Card Description Card Description
+                  Card Description Card Description</p>
+              </div>
+            </div>
+          </a>
+
         </div>
 
-        <nav class="nav">
-            <ul>
-                <li><a href="#">ホーム</a></li>
-                <li><a href="#">こだわり</a></li>
-                <li><a href="#">お知らせ</a></li>
-                <li><a href="#">営業時間</a></li>
-            </ul>
-        </nav>
+        <!-- ↑この中にコンテンツを入れる↑ -->
+      </div>
+    </section>
 
-        <button type="button" class="nav-button" onClick="navFunc()">
-            <span class="sr-only">MENU</span>
-        </button>
 
-    </header>
+    <section class="section otherColor">
+      <div class="section__wrapper">
+        <!-- ↓この中にコンテンツを入れる↓ -->
 
-    <div class="hero">
-        <h1>
-            <img src="img/catch.svg" alt="Take A Break">
-        </h1>
-    </div>
+        <h2 class="section__title">Section Title</h2>
 
-    <article class="menu container">
-        <h2>Food & Drink</h2>
-        <p>こだわり素材のメニューをご紹介します</p>
+        <div class="layout--2">
 
-        <section class="item cafe">
-            <div class="text">
-                <h3>定番カフェ</h3>
-                <p>定番だからこそ、豆や茶葉、ミルク、キャラメルなどの素材にこだわった一杯を提供しています。</p>
+          <a class="card" href="#">
+            <div class="card__wrapper--row">
+              <img class="card__image" src="img/sample.jpg" alt="">
+              <div class="card__box">
+                <h3 class="card__title fontsize--L">Card Title</h3>
+                <p class="card__desc fontsize--S">Card Description Card Description Card Description Card Description
+                  Card Description Card Description</p>
+              </div>
             </div>
-            <div class="photo">
-                <figure class="fig1"><img src="img/beans.jpg" alt="豆"></figure>
-                <figure class="fig2"><img src="img/espresso.jpg" alt="エスプレッソ"></figure>
+          </a>
+          <a class="card" href="#">
+            <div class="card__wrapper--row">
+              <img class="card__image" src="img/sample.jpg" alt="">
+              <div class="card__box">
+                <h3 class="card__title fontsize--L">Card Title</h3>
+                <p class="card__desc fontsize--S">Card Description Card Description Card Description Card Description
+                  Card Description Card Description</p>
+              </div>
             </div>
-        </section>
-    
-        <section class="item plate">
-            <div class="text">
-                <h3>季節のスペシャルプレート</h3>
-                <p>季節のフルーツを組み合わせたスペシャルプレートはカフェ専属シェフのおすすめメニューです。</p>
+          </a>
+
+        </div>
+
+        <!-- ↑この中にコンテンツを入れる↑ -->
+      </div>
+    </section>
+
+
+    <section class="section">
+      <div class="section__wrapper">
+        <!-- ↓この中にコンテンツを入れる↓ -->
+
+        <h2 class="section__title">Section Title</h2>
+
+        <div class="layout--3">
+
+          <a class="card" href="#">
+            <div class="card__wrapper">
+              <img class="card__image" src="img/sample.jpg" alt="">
+              <div class="card__box">
+                <h3 class="card__title fontsize--L">Card Title</h3>
+                <p class="card__desc fontsize--S">Card Description Card Description Card Description Card Description
+                  Card Description Card Description</p>
+              </div>
             </div>
-            <div class="photo">
-                <figure class="fig1"><img src="img/plate.jpg" alt="プレート"></figure>
+          </a>
+          <a class="card" href="#">
+            <div class="card__wrapper">
+              <img class="card__image" src="img/sample.jpg" alt="">
+              <div class="card__box">
+                <h3 class="card__title fontsize--L">Card Title</h3>
+                <p class="card__desc fontsize--S">Card Description Card Description Card Description Card Description
+                  Card Description Card Description</p>
+              </div>
             </div>
-        </section>
-    
-        <section class="item sweet">
-            <div class="text">
-                <h3>お持ち帰りスイーツ</h3>
-                <p>自宅でのんびりしながら楽しめるスイーツたちです。ケーキ、クリームサンド、クッキーなどをご用意しています。</p>
+          </a>
+          <a class="card" href="#">
+            <div class="card__wrapper">
+              <img class="card__image" src="img/sample.jpg" alt="">
+              <div class="card__box">
+                <h3 class="card__title fontsize--L">Card Title</h3>
+                <p class="card__desc fontsize--S">Card Description Card Description Card Description Card Description
+                  Card Description Card Description</p>
+              </div>
             </div>
-            <div class="photo">
-                <figure class="fig1"><img src="img/cake.jpg" alt="ケーキ"></figure>
-                <figure class="fig2"><img src="img/sandwich.jpg" alt="サンド"></figure>
+          </a>
+          <a class="card" href="#">
+            <div class="card__wrapper">
+              <img class="card__image" src="img/sample.jpg" alt="">
+              <div class="card__box">
+                <h3 class="card__title fontsize--L">Card Title</h3>
+                <p class="card__desc fontsize--S">Card Description Card Description Card Description Card Description
+                  Card Description Card Description</p>
+              </div>
             </div>
-        </section>
-    
+          </a>
+          <a class="card" href="#">
+            <div class="card__wrapper">
+              <img class="card__image" src="img/sample.jpg" alt="">
+              <div class="card__box">
+                <h3 class="card__title fontsize--L">Card Title</h3>
+                <p class="card__desc fontsize--S">Card Description Card Description Card Description Card Description
+                  Card Description Card Description</p>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="#">
+            <div class="card__wrapper">
+              <img class="card__image" src="img/sample.jpg" alt="">
+              <div class="card__box">
+                <h3 class="card__title fontsize--L">Card Title</h3>
+                <p class="card__desc fontsize--S">Card Description Card Description Card Description Card Description
+                  Card Description Card Description</p>
+              </div>
+            </div>
+          </a>
 
-    </article>
+        </div>
 
-    <aside class="news container">
-        <h2>Whats news</h2>
-        <p>カフェからのお知らせ＆新着情報です</p>
-    </aside>
+        <!-- ↑この中にコンテンツを入れる↑ -->
+      </div>
+    </section>
 
-    <aside class="hours container">
-        <h2>HOURS</h2>
-        <p>営業da</p>
-    </aside>
+    <!-- ↑ content ↑ -->
 
-    <aside class="info container">
-        <h2>
-            <img src="img/yamacafe.svg" alt="山カフェ">
-        </h2>
-    </aside>
-
-    <footer class="footer">
-        COPYRIGHT ©︎ YAMACAFE
-    </footer>
-
-    <script>
-        function navFunc() {
-            document.querySelector('html').classList.toggle('open');
-        }
-    </script>
-
-
+  </div>
+  </div>
 </body>
+
 </html>
